@@ -9,7 +9,7 @@ const HomeTop = () => {
         <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{background: '#817140ff'}}>
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff" }}>
+          <Typography variant="h3" component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff" }}>
             Kumar Real Estate
           </Typography>
         </Toolbar>
@@ -26,17 +26,17 @@ const HomeTop = () => {
       />
     </Card>
         </div>
-        <div className='contont-top' style={{ display: "flex", justifyContent: "center" }}>
+        <div className='contont-top'>
         <Box sx={{ mt: 1 }} >
           <Grid container spacing={3}>
             <Grid item xs={12} md={12} lg={12}>
-              <Paper sx={{ p: 2, display: "flex", flexDirection: "column", bgcolor: "#F1F4E6ff"}} elevation={8}>
+              <Paper sx={{ p: 2, display: "flex", flexDirection: "column", bgcolor: "#F1F4E6ff"}} elevation={0}>
                 <Grid container spacing={3}>
                   <Grid item xs={12} md={12} lg={12}>
                        <Typography variant='h3'>Our services</Typography> 
                   </Grid>
 
-                  <Grid xs={12} sm={12} md={12} lg={12}>
+    <Grid item xs={12} sm={12} md={6} lg={6}>
                   <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
@@ -47,7 +47,7 @@ const HomeTop = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Land Property
+          Land Property
           </Typography>
           <Typography variant="body2" color="text.secondary">
           Discover the ideal piece of land with Senthil Real Estate Agency. Whether you desire a serene countryside escape, a strategic commercial plot, or a scenic location for your dream home, 
@@ -58,6 +58,7 @@ const HomeTop = () => {
       </CardActionArea>
     </Card> 
                   </Grid>
+
                   <Grid item xs={12} sm={12} md={6} lg={6}>
                   <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
@@ -123,7 +124,7 @@ const HomeTop = () => {
       </CardActionArea>
     </Card> 
                   </Grid>
-                  <Grid item xs={12} sm={12} md={6} lg={6}>
+                  <Grid item xs={12} sm={12} md={12} lg={12}>
                   <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
