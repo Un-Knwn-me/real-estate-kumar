@@ -1,5 +1,7 @@
-import { Box, Card, CardMedia, Grid, Paper, Typography } from '@mui/material'
+import { Box, Card, CardMedia, Fab, Grid, Link, Paper, Typography } from '@mui/material'
 import React from 'react'
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { NavigateBefore } from '@mui/icons-material';
 
 const HomeBody = () => {
   return (
@@ -15,73 +17,85 @@ const HomeBody = () => {
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>________</Typography> 
                   </Grid>
                   <Grid item xs={12} md={12} lg={12}>
-        <Card sx={{ maxWidth: 1000 }}>
-            <Grid container spacing={0}>
-            <Grid item xs={5} md={5} lg={5}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/1725385/pexels-photo-1725385.jpeg?auto=compress&cs=tinysrgb&w=600"
-        title="1"
-      /></Grid>
-      <Grid item xs={2} md={2} lg={2}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/7005274/pexels-photo-7005274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="2"
-      /></Grid>
+                    <div className='image-collage' >
+  <Card >
+    <Grid container spacing={0} sx={{ display: "flex", flexDirection: "row", justifyContent: "center" }}>
       <Grid item xs={5} md={5} lg={5}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/5825371/pexels-photo-5825371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="2"
-      /></Grid>
-
-<Grid item xs={4} md={4} lg={4}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/5824495/pexels-photo-5824495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="1"
-      /></Grid>
-      <Grid item xs={4} md={4} lg={4}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/7534294/pexels-photo-7534294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="2"
-      /></Grid>
-      <Grid item xs={4} md={4} lg={4}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/7533759/pexels-photo-7533759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="2"
-      /></Grid>
-
-<Grid item xs={3} md={3} lg={3}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/7031881/pexels-photo-7031881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="1"
-      /></Grid>
-      <Grid item xs={3} md={3} lg={3}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/6782568/pexels-photo-6782568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="2"
-      /></Grid>
-      <Grid item xs={3} md={3} lg={3}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="3"
-      /></Grid>
-            <Grid item xs={3} md={3} lg={3}>
-      <CardMedia
-        sx={{ height: 250 }}
-        image="https://images.pexels.com/photos/6933769/pexels-photo-6933769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        title="4"
-      /></Grid>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/1725385/pexels-photo-1725385.jpeg?auto=compress&cs=tinysrgb&w=600"
+          title="1"
+        />
       </Grid>
-    </Card>
-    </Grid></Grid>
+      <Grid item xs={2} md={2} lg={2}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/7005274/pexels-photo-7005274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="2"
+        />
+      </Grid>
+      <Grid item xs={5} md={5} lg={5}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/5825371/pexels-photo-5825371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="2"
+        />
+      </Grid>
+
+      <Grid item xs={4} md={4} lg={4}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/5824495/pexels-photo-5824495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="1"
+        />
+      </Grid>
+      <Grid item xs={4} md={4} lg={4}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/7534294/pexels-photo-7534294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="2"
+        />
+      </Grid>
+      <Grid item xs={4} md={4} lg={4}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/7533759/pexels-photo-7533759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="2"
+        />
+      </Grid>
+
+      <Grid item xs={3} md={3} lg={3}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/7031881/pexels-photo-7031881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="1"
+        />
+      </Grid>
+      <Grid item xs={3} md={3} lg={3}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/6782568/pexels-photo-6782568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="2"
+        />
+      </Grid>
+      <Grid item xs={3} md={3} lg={3}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/6890403/pexels-photo-6890403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="3"
+        />
+      </Grid>
+      <Grid item xs={3} md={3} lg={3}>
+        <CardMedia
+          sx={{ height: 250 }}
+          image="https://images.pexels.com/photos/6933769/pexels-photo-6933769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          title="4"
+        />
+      </Grid>
+    </Grid>
+  </Card></div>
+</Grid>
+</Grid>
     <br/><br/>
     <Grid container spacing={3}>
                 <Grid item xs={12} md={12} lg={12}>
@@ -129,14 +143,28 @@ const HomeBody = () => {
                     </Grid></Grid>
                     <br/><br/>
                     <div className='contact'>
-                    <Grid container spacing={3}>
+                    <Box display="flex" justifyContent="center">
+                    <Grid container spacing={3} sx={{ width: '100%', justifyContent: 'center' }}>
                 <Grid item xs={12} md={12} lg={12}>
                        <Typography variant='h4'>Reach Us!</Typography>
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>_____</Typography> 
                   </Grid>
                   
-                  <Grid item xs={6} md={6} lg={6} sx={{ ml: 5 }}>
-
+                  <Grid item xs={6} md={6} lg={6}>
+                  <Box
+          sx={{
+            position: 'relative',
+            width: '100%',
+            paddingTop: { xs: '75%', sm: '56.25%', md: '75%', lg: '56.25%' },
+            '& iframe': {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+            },
+          }}
+        >
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15668.345694085618!2d77.2396407!3d10.9568442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9adfa6cbe8c4f%3A0x5dae1d6862d9568f!2sKUMAR%20REAL%20ESTATE!5e0!3m2!1sen!2sin!4v1690057088534!5m2!1sen!2sin" 
                     width="600" 
                     height="450" 
@@ -144,19 +172,33 @@ const HomeBody = () => {
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </Box>
                     </Grid>
                     <Grid item xs={6} md={4} lg={4} sx={{ mr: 2, ml:2 }}>
                     <Typography variant='h5'>Contact !</Typography><br/><br/>
                     <Typography variant='button'>Phone No:- </Typography>
-                    <Typography> +91 98425 84714 </Typography>
+                    <a href='tel:+919842584714'>
+                    <Typography color={"#000000"}> +91 98425 84714 </Typography></a>
                     <br/>
                     <Typography variant='button'>Address:- </Typography>
                     <Typography> 6/79, S Pillayar Kovil St,</Typography>
                     <Typography> unjapalaiyam, Kaniyur, </Typography>
                     <Typography> Anupatti, Tamil Nadu 641658 </Typography>
-                    
+                    <br/>
+                    <a href='https://wa.me/+919842584714'>
+                    <Fab
+            variant="extended"
+            sx={{
+              bgcolor: "#00e676",
+              fontSize: { xs: '10px', sm: '14px', md: '16px' }, // Adjust the font size for different screen sizes
+              p: { xs: '8px 16px', sm: '12px 24px', md: '16px 32px' }, // Adjust the padding for different screen sizes
+            }}
+          >
+                    <WhatsAppIcon sx={{ mr: 1 }} />
+                      Chat on WhatsApp
+                    </Fab></a>
                     </Grid>
-                    </Grid>
+                    </Grid></Box>
                     </div>
     </Paper></Grid></Grid>
     </Box>
