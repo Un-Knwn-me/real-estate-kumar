@@ -1,7 +1,6 @@
-import { Box, Card, CardMedia, Fab, Grid, Link, Paper, Typography } from '@mui/material'
+import { Box, Card, CardMedia, Fab, Grid, Paper, Typography } from '@mui/material'
 import React from 'react'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { NavigateBefore } from '@mui/icons-material';
 
 const HomeBody = () => {
   return (
@@ -11,6 +10,7 @@ const HomeBody = () => {
           <Grid container spacing={3}>
             <Grid item xs={12} md={12} lg={12}>
               <Paper sx={{ p: 2, display: "flex", flexDirection: "column", bgcolor: "#F1F4E6ff" }} elevation={24}>
+                <br/><br/>
                 <Grid container spacing={3}>
                 <Grid item xs={12} md={12} lg={12}>
                        <Typography variant='h4'>FOR ALL TASTES AND ALL DESIRES</Typography>
@@ -96,7 +96,7 @@ const HomeBody = () => {
   </Card></div>
 </Grid>
 </Grid>
-    <br/><br/>
+    <br/><br/><br/><br/>
     <Grid container spacing={3}>
                 <Grid item xs={12} md={12} lg={12}>
                        <Typography variant='h4'>About</Typography>
@@ -141,7 +141,7 @@ const HomeBody = () => {
 
 
                     </Grid></Grid>
-                    <br/><br/>
+                    <br/><br/><br/>
                     <div className='contact'>
                     <Box display="flex" justifyContent="center">
                     <Grid container spacing={3} sx={{ width: '100%', justifyContent: 'center' }}>
@@ -165,13 +165,14 @@ const HomeBody = () => {
             },
           }}
         >
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15668.345694085618!2d77.2396407!3d10.9568442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9adfa6cbe8c4f%3A0x5dae1d6862d9568f!2sKUMAR%20REAL%20ESTATE!5e0!3m2!1sen!2sin!4v1690057088534!5m2!1sen!2sin" 
-                    width="600" 
-                    height="450" 
-                    style={{ border: "0" }}
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15668.345694085618!2d77.2396407!3d10.9568442!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9adfa6cbe8c4f%3A0x5dae1d6862d9568f!2sKUMAR%20REAL%20ESTATE!5e0!3m2!1sen!2sin!4v1690057088534!5m2!1sen!2sin"
+            title="Google Map - Kumar Real Estate Location"
+            style={{ border: '0' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
                     </Box>
                     </Grid>
                     <Grid item xs={6} md={4} lg={4} sx={{ mr: 2, ml:2 }}>
@@ -199,7 +200,7 @@ const HomeBody = () => {
                     </Fab></a>
                     </Grid>
                     </Grid></Box>
-                    </div>
+                    </div><br/><br/>
     </Paper></Grid></Grid>
     </Box>
         </div>
