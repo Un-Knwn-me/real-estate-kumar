@@ -105,7 +105,7 @@ const HomeBody = () => {
                   <Grid item xs={12} md={12} lg={12} sx={{ ml: 8, mr: 8 }}>
                   <Grid item xs={12} md={12} lg={12}>
                        <Typography align="left">
-                       At Senthil Real Estate, we take pride in offering a wide range of exceptional real estate services tailored to meet your diverse needs. Whether you're looking for a serene countryside escape, a vibrant urban dwelling, a beautiful beachside retreat, or a spacious corporate godown, we have the perfect property for you.
+                       At Kumar Real Estate, we take pride in offering a wide range of exceptional real estate services tailored to meet your diverse needs. Whether you're looking for a serene countryside escape, a vibrant urban dwelling, a beautiful beachside retreat, or a spacious corporate godown, we have the perfect property for you.
                        </Typography>
                       </Grid>
                       <br/>
@@ -135,7 +135,7 @@ const HomeBody = () => {
                       <br/>
                       <Grid item xs={12} md={12} lg={12}>
                        <Typography align="left">
-                       With Senthil Real Estate, you can count on personalized service, market expertise, and a proven track record. Reach out to us today, and together, we'll turn your real estate aspirations into a prosperous reality.
+                       With Kumar Real Estate, you can count on personalized service, market expertise, and a proven track record. Reach out to us today, and together, we'll turn your real estate aspirations into a prosperous reality.
                        </Typography>
                       </Grid>
 
