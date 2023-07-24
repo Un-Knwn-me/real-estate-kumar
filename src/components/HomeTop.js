@@ -52,7 +52,7 @@ const HomeTop = () => {
             Kumar Real Estate
           </Typography>
          </Toolbar>
-        <Typography variant='button' color={'#381F16ff'} sx={{ color: "#F1F4E6ff", textAlign: "right" }}>Contact: +91 98425 84714</Typography>
+        <Typography variant='button' color={'#381F16ff'} sx={{ color: "#F1F4E6ff", textAlign: "right", mr: 1 }}>Contact: +91 98425 84714</Typography>
       </AppBar>
     </Box>
         </div>
