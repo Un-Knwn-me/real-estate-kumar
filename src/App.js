@@ -1,6 +1,6 @@
 import './App.css';
 import HomeTop from './components/HomeTop';
-import HomeBody from './components/HomeBody';
+// import HomeBody from './components/HomeBody';
 import Footer from './components/Footer';
 
 function App() {
