@@ -32,6 +32,12 @@ const properties = [
     title: "Agri-Land Property",
     description: "Discover the perfect agricultural land with Kumar Real Estate Agency. Whether you're looking for vast farmlands, fertile plots for cultivation, or serene rural retreats, we have an extensive selection of agri land properties to suit your farming needs. Our experienced team will guide you through the process, making buying or selling agri land a seamless experience. Let's cultivate your agricultural dreams into a prosperous reality!",
   },
+  {
+    imageUrl:"https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    altText:"Industrial Property",
+    title: "Industrial Property",
+    description: " Explore our wide range of industrial buildings with Kumar Real Estate Agency. Whether you need a manufacturing plant, a warehouse, or a factory space, we have an impressive selection of industrial buildings to cater to your specific business requirements. Our experienced team will guide you through the process, ensuring a smooth and efficient buying or leasing experience. Let's find the perfect industrial space to take your business to new heights!"
+  }
 ];
 
 
