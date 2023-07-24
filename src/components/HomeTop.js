@@ -49,7 +49,7 @@ const HomeTop = () => {
         <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{background: '#817140ff'}}>
         <Toolbar>
-          <Typography fontFamily={"Georgia, serif;"} component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff", fontSize: { xs: '24px', sm: '33px', md: '42px' } }}>
+          <Typography fontFamily={"Georgia, serif;"} component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff", fontSize: { xs: '26px', sm: '33px', md: '42px' } }}>
             Kumar Real Estate
           </Typography>
          </Toolbar>
