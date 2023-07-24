@@ -43,11 +43,12 @@ const Footer = () => {
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>
               <Box component="li" sx={{ py: 0.5 }}>
                 <Typography variant='button' >Phone Number: </Typography>
-                <Typography variant='button'> +91 98425 84714</Typography>
+                <a href='tel:+919842584714'>
+                <Typography variant='button' color={"#000000"}> +91 98425 84714</Typography></a>
               </Box>
               <Box component="li" sx={{ py: 0.5 }}>
               <Typography variant='button' >Address: </Typography>
-                <Typography variant='button'> 6/79, S Pillayar Kovil St, unjapalaiyam, Kaniyur, Anupatti, Tamil Nadu 641658</Typography>
+                <Typography variant='button'> 6/79, S Pillayar Kovil St, unjapalaiyam, Kaniyur, Anupatti, Tamil Nadu - 641658</Typography>
               </Box>
             </Box>
           </Grid>

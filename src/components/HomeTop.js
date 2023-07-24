@@ -10,7 +10,7 @@ const properties = [
     description: "Discover the ideal piece of land with Kumar Real Estate Agency. Whether you desire a serene countryside escape, a strategic commercial plot, or a scenic location for your dream home, we have an extensive selection of land properties to suit your needs. Our dedicated team of experts will assist you throughout the process, making buying or selling land a seamless experience. Let's turn your vision into reality!",
   },
   {
-    imageUrl: "https://images.pexels.com/photos/12196687/pexels-photo-12196687.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "https://images.pexels.com/photos/12196687/pexels-photo-12196687.jpeg?auto=compress&cs=tinysrgb&w=4000&h=1600&dpr=1",
     altText: "House Property",
     title: "House Property",
     description: "Find your perfect home with Kumar Real Estate Agency. Whether you want a peaceful retreat, a lively city space, or a beautiful beachside getaway, we have a wide range of homes and offices for you to choose from. Our experienced team will guide you every step of the way, making the buying, selling, or investing process easy and hassle-free. Let's make your real estate dreams come true!",
@@ -49,11 +49,11 @@ const HomeTop = () => {
         <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{background: '#817140ff'}}>
         <Toolbar>
-          <Typography variant="h3" component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff" }}>
+          <Typography fontFamily={"Georgia, serif;"} component="div" sx={{ flexGrow: 1, color: "#F1F4E6ff", fontSize: { xs: '24px', sm: '33px', md: '42px' } }}>
             Kumar Real Estate
           </Typography>
          </Toolbar>
-        <Typography variant='button' color={'#381F16ff'} sx={{ color: "#F1F4E6ff", textAlign: "right", mr: 1 }}>Contact: +91 98425 84714</Typography>
+        <Typography variant='button' color={'#381F16ff'} sx={{ color: "#F1F4E6ff", textAlign: "right", mr: 1, fontSize: { xs: '10px', sm: '14px', md: '14px' } }}>Contact: +91 98425 84714</Typography>
       </AppBar>
     </Box>
         </div>
@@ -62,7 +62,7 @@ const HomeTop = () => {
       <CardMedia
         component="img"
         alt="green iguana"
-        height="500"
+        height="565"
         image="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
       />
     </Card>
@@ -74,7 +74,7 @@ const HomeTop = () => {
               <Paper sx={{ p: 2, display: "flex", flexDirection: "column", bgcolor: "#F1F4E6ff"}} elevation={0}>
               <br/><br/><br/>
                   <Grid item xs={12} md={12} lg={12}>
-                       <Typography variant='h3'>Our services</Typography> 
+                       <Typography variant='h3'>Our Services</Typography> 
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>________</Typography>
                   </Grid>
                   <br/><br/>
@@ -94,7 +94,7 @@ const HomeTop = () => {
                   <Typography gutterBottom variant="h5" component="div">
                     {property.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography align="left" variant="body2" color="text.secondary">
                     {property.description}
                   </Typography>
                 </CardContent>
@@ -114,7 +114,7 @@ const HomeTop = () => {
                 <br/><br/>
                 <Grid container spacing={3}>
                 <Grid item xs={12} md={12} lg={12}>
-                       <Typography variant='h4'>FOR ALL TASTES AND ALL DESIRES</Typography>
+                       <Typography variant='h4'>For All Tastes And All Desires</Typography>
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>________</Typography> 
                   </Grid>
                   <Grid item xs={12} md={12} lg={12}>
@@ -200,7 +200,7 @@ const HomeTop = () => {
     <br/><br/><br/><br/>
     <Grid container spacing={3}>
                 <Grid item xs={12} md={12} lg={12}>
-                       <Typography variant='h4'>About</Typography>
+                       <Typography variant='h4'>About Us</Typography>
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>___</Typography> 
                   </Grid>
                   <Grid item xs={12} md={12} lg={12} sx={{ ml: 8, mr: 8 }}>
@@ -247,7 +247,7 @@ const HomeTop = () => {
                     <Box display="flex" justifyContent="center">
                     <Grid container spacing={3} sx={{ width: '100%', justifyContent: 'center' }}>
                 <Grid item xs={12} md={12} lg={12}>
-                       <Typography variant='h4'>Reach Us!</Typography>
+                       <Typography variant='h4'>Reach Us</Typography>
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>_____</Typography> 
                   </Grid>
                   
@@ -277,7 +277,7 @@ const HomeTop = () => {
                     </Box>
                     </Grid>
                     <Grid item xs={6} md={4} lg={4} sx={{ mr: 2, ml:2 }}>
-                    <Typography variant='h5'>Contact !</Typography><br/><br/>
+                    <Typography variant='h5'>Contact</Typography><br/><br/>
                     <Typography variant='button'>Phone No:- </Typography>
                     <a href='tel:+919842584714'>
                     <Typography color={"#000000"}> +91 98425 84714 </Typography></a>
@@ -292,12 +292,14 @@ const HomeTop = () => {
             variant="extended"
             sx={{
               bgcolor: "#00e676",
-              fontSize: { xs: '10px', sm: '14px', md: '16px' }, // Adjust the font size for different screen sizes
-              p: { xs: '8px 16px', sm: '12px 24px', md: '16px 32px' }, // Adjust the padding for different screen sizes
+              fontSize: { xs: '7px', sm: '12px', md: '14px' }, // Adjust the font size for different screen sizes
+              p: { xs: '8px 16px', sm: '12px 18px', md: '16px 28px' }, // Adjust the padding for different screen sizes
             }}
           >
                     <WhatsAppIcon sx={{ mr: 1 }} />
-                      Chat on WhatsApp
+                    <Typography variant='button'  sx={{
+              fontSize: { xs: '8px', sm: '12px', md: '16px' }, // Adjust the font size for different screen sizes
+            }}>Chat on WhatsApp</Typography>
                     </Fab></a>
                     </Grid>
                     </Grid></Box>
