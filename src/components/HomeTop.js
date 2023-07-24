@@ -10,7 +10,7 @@ const properties = [
     description: "Discover the ideal piece of land with Kumar Real Estate Agency. Whether you desire a serene countryside escape, a strategic commercial plot, or a scenic location for your dream home, we have an extensive selection of land properties to suit your needs. Our dedicated team of experts will assist you throughout the process, making buying or selling land a seamless experience. Let's turn your vision into reality!",
   },
   {
-    imageUrl: "https://images.pexels.com/photos/12196687/pexels-photo-12196687.jpeg?auto=compress&cs=tinysrgb&w=4000&h=1600&dpr=1",
+    imageUrl: "https://images.pexels.com/photos/12196687/pexels-photo-12196687.jpeg?auto=compress&cs=tinysrgb&w=3800&h=1600&dpr=1",
     altText: "House Property",
     title: "House Property",
     description: "Find your perfect home with Kumar Real Estate Agency. Whether you want a peaceful retreat, a lively city space, or a beautiful beachside getaway, we have a wide range of homes and offices for you to choose from. Our experienced team will guide you every step of the way, making the buying, selling, or investing process easy and hassle-free. Let's make your real estate dreams come true!",
