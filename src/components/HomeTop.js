@@ -57,7 +57,7 @@ const HomeTop = () => {
     </Box>
         </div>
         <div className='card'>
-        <Card sx={{ maxWidth: 1500 }}>
+        <Card sx={{ maxWidth: "100%" }}>
       <CardMedia
         component="img"
         alt="green iguana"
