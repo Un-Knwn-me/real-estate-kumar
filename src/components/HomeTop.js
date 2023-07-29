@@ -1,6 +1,7 @@
 import { AppBar, Box, Card, CardActionArea, CardContent, CardMedia, Fab, Grid, Paper, Toolbar, Typography } from '@mui/material'
 import React from 'react'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import SEO from './SEO';
 
 const properties = [
   {
@@ -59,20 +60,86 @@ const HomeTop = () => {
         </div>
         <div className='card'>
         <Card sx={{ maxWidth: "100%" }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="565"
-        image="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-      />
-    </Card>
+        <Box position="relative">
+        <CardMedia
+          component="img"
+          alt="green iguana"
+          height="565"
+          image="https://images.pexels.com/photos/101808/pexels-photo-101808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <Typography
+          component="div"
+          sx={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            padding: '10px',
+            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            color: '#fff',
+            fontSize: { xs: '12px', sm: '18px', md: '30px' }
+          }}
+        ><header>
+          Find Your Perfect Property with Kumar Real Estate Agency
+          </header>
+        </Typography>
+      </Box></Card>
         </div>
+        <SEO
+        title="Welcome to Kumar Real Estate | Your Trusted Partner for Property Solutions"
+        description="Discover your dream property with Kumar Real Estate. We offer a wide range of residential and commercial properties tailored to your needs. Buy, sell, or invest with confidence. Contact us today!"
+      />
+
         <div className='contont-top'>
         <Box sx={{ mt: 1 }} >
           <Grid container spacing={3}>
             <Grid item xs={12} md={12} lg={12}>
               <Paper sx={{ p: 2, display: "flex", flexDirection: "column", bgcolor: "#F1F4E6ff"}} elevation={0}>
-              <br/><br/><br/>
+              <Grid>
+              <Box sx={{m: 10}}>
+      <Typography variant='h4'>Who We Are</Typography><br/>
+      <Typography  align="left" sx={{
+            position: 'relative',
+            width: '100%',
+            ml:3,
+          }}>
+          At Kumar Real Estate, we are committed to helping you find your ideal property. Whether you are looking for a cozy home, a strategic commercial space, or a lucrative investment opportunity, we have an extensive selection of properties to suit your preferences. 
+          </Typography>
+          <Typography align="left" sx={{
+            position: 'relative',
+            width: '100%',
+            ml:3,
+          }}>
+          Our experienced team of real estate experts is here to guide you through the buying, selling, or investing process, making it smooth and hassle-free. 
+          Experience the joy of finding your dream property with us.
+          </Typography>
+          <br/><br/><br/>
+      <Typography variant='h4'>Services Offered</Typography>
+        <ul>
+        <Typography align="left" sx={{
+            position: 'relative',
+            width: '100%',
+          }}>
+          <li>Residential Properties: Explore a variety of homes, apartments, and villas in sought-after locations. Find the perfect living space for you and your family.</li>
+          <li>Commercial Properties: Discover strategic office spaces, retail shops, and industrial properties for your business needs. Boost your enterprise with the right location.</li>
+          <li>Investment Opportunities: Unlock potential with our lucrative investment properties. Invest smartly for long-term gains and financial security.</li>
+          </Typography>
+        </ul>        
+<br/><br/><br/>
+      <Typography variant='h4'>Why Choose Us</Typography>
+        <ul>
+        <Typography align="left" sx={{
+            position: 'relative',
+            width: '100%',
+          }}>
+          <li>Extensive Property Listings: Our vast portfolio of properties ensures you'll find the perfect match for your requirements.</li>
+          <li>Expert Guidance: Our dedicated team of real estate professionals is ready to assist you at every step, offering valuable insights and advice.</li>
+          <li>Trustworthy Transactions: Count on us for transparent and secure transactions. Your satisfaction is our top priority.</li>
+          <li>Local Market Knowledge: With years of experience in the real estate market, we have an in-depth understanding of the local trends and opportunities.</li>
+          </Typography>
+        </ul>        
+        </Box>
+                </Grid>
+                <br/>
                   <Grid item xs={12} md={12} lg={12}>
                        <Typography variant='h3'>Our Services</Typography> 
                        <Typography variant='h5' color={'#381F16ff'} sx={{fontWeight: 'bolder' }}>________</Typography>
@@ -303,6 +370,8 @@ const HomeTop = () => {
                     </Fab></a>
                     </Grid>
                     </Grid></Box>
+                    <br/>
+                    <Typography>Reach out to us today to start your real estate journey. Our friendly team is eager to answer your queries and help you find your dream property.</Typography>
                     </div><br/><br/>
     </Paper></Grid></Grid>
     </Box>

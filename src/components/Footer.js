@@ -36,7 +36,7 @@ const Footer = () => {
       <Container sx={{ my: 8, display: 'flex' }}>
         <Grid container spacing={5}>
 
-          <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Grid item xs={12} sm={12} md={12} lg={12}>
             <Typography variant="h6" marked="Center" gutterBottom>
               Contact Us
             </Typography>
@@ -50,17 +50,26 @@ const Footer = () => {
               <Typography variant='button' >Address: </Typography>
                 <Typography variant='button'> 6/79, S Pillayar Kovil St, unjapalaiyam, Kaniyur, Anupatti, Tamil Nadu - 641658</Typography>
               </Box>
+            </Box><br/>
+            <Box>
+            <Copyright />
+            <br/>
+            <Typography variant="caption">
+              {'Webpage developed by '}
+              <Link href="https://github.com/Un-Knwn-me" rel="developed" title="Un-knwn">
+                Un-Knwn
+              </Link></Typography>
             </Box>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={6} lg={6}>
+          {/* <Grid item xs={12} sm={6} md={6} lg={6}>
             <Grid
               container
               direction="column"
               justifyContent="flex-end"
               spacing={2}
               sx={{ height: 120 }}
-            >
+            > */}
               {/* <Grid item sx={{ display: 'flex' }}>
                 <Box component="a" href="https://mui.com/" sx={iconStyle}>
                   <img
@@ -75,9 +84,10 @@ const Footer = () => {
                   />
                 </Box>
               </Grid> */}
-              <Grid item>
-                <Copyright />
-                <Grid item>
+              {/* <Grid item>
+                <Copyright /> */}
+
+                {/* <Grid item>
             <Typography variant="caption">
               {'Webpage developed by '}
               <Link href="https://github.com/Un-Knwn-me" rel="developed" title="Un-knwn">
@@ -95,12 +105,13 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 CC 3.0 BY
-              </Link> */}
+              </Link> 
             </Typography>
-          </Grid>
-              </Grid>
+          </Grid> */}
+
+              {/* </Grid>
             </Grid>
-          </Grid>
+          </Grid> */}
 
 
         </Grid>
